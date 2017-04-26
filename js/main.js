@@ -15,10 +15,9 @@ function translate(){
 translate();
 
 function imprimir(){
-	var miEmail= document.getElementById('inputEmail').value;
-	var miContra= document.getElementById('inputPassword').value;
-	alert("El correo es: "+miEmail+ " & La contraseña es: " +miContra);
+	var miEmail= document.getElementById('mostrarCorreo');
+	var miContra= document.getElementById('mostrarContra');
+	
+	miEmail.innerHTML = "Email: "+document.getElementById("inputEmail").value;
+	miContra.innerHTML = "Contraseña: "+document.getElementById("inputPassword").value;
 }
-
-/*<p id="mostrarCorreo">El correo electrónico ingresado es:</p>
-          <p id="mostrarClave">La clave ingresada es:</p>*/
